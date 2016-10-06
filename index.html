@@ -1,0 +1,39 @@
+<!DOCTYPE HTML>
+<html>
+	<head>
+		<meta id="view" name="viewport" content="width=device-width, maximum-scale=1.0, minimum-scale=1.0, initial-scale=1">
+		<title>Creating a Countdown</title>
+		<link rel="stylesheet" type="text/css" href="my_countdown.css">
+		<script type="text/javascript" src="js/jquery-2.1.3.min.js"></script>
+		<script type="text/javascript" src="js/jquery.plugin.min.js"></script>
+		<script type="text/javascript" src="js/jquery.countdown.min.js"></script>
+		<script type="text/javascript">
+
+			$(document).ready(function(){
+				$('.my-countdown').countdown({
+
+					until: $.countdown.UTCDate(
+
+						+8, 2016, 9, 24, 7, 0, 0 
+					), format: 'dhms'
+				});
+			});
+
+		</script>
+	</head>
+	<body>
+		
+		<div id="world-premiere">
+
+			<div class="heading">
+				<h1>BWD 20th year anniversary</h1>
+				<h2>countdown</h2>
+				
+			</div>
+			
+			<div class="my-countdown"></div>
+
+		</div>
+
+	</body>
+</html>
